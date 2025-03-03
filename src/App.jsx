@@ -1,16 +1,30 @@
+import Logo from "./components/Logo";
+import List from "./components/List";
+import Button from "./components/Button";
+import Hero_section_one from "./components/Hero_section_one";
 
-import Home from "./Pages/Home";
+import './App.css'
 
 const App = () => {
   return (
     <div className="container mx-auto ">
+
       <header>
-        <Home/>
+        <nav className="p-2 shadow-lg flex items-center justify-between mt-5">
+          <Logo/>
+          <List/>
+          <Button title="contact us" border={true}/>
+        </nav>
       </header>
-      
-        <main className="text-center mt-10">
-          <h1 className="text-4xl font-bold text-gray-800">Welcome to My Portfolio</h1>
-        </main>
+
+
+      <main>
+        <Hero_section_one/>
+      </main>
+
+
+      <footer></footer>
+
     </div>
   );
 };
