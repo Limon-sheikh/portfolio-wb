@@ -1,29 +1,32 @@
-import Logo from "./components/Logo";
-import List from "./components/List";
-import Button from "./components/Button";
+
+import Navber from "./components/Navigationbar/Navber";
 import Hero_section_one from "./components/Hero_section_one";
+import About from "./Pages/About";
+import CustomCursor from "./components/CustomCursor";
+
+// import Test from "./components/Test"
+
 
 import './App.css'
 
 const App = () => {
   return (
-    <div className="container mx-auto ">
-
+    <div>
+      <CustomCursor />
       <header>
-        <nav className="p-2 shadow-lg flex items-center justify-between mt-5">
-          <Logo/>
-          <List/>
-          <Button title="contact us" border={true}/>
-        </nav>
+          <Navber/>
       </header>
 
 
-      <main>
+      <main className="container mx-auto ">
         <Hero_section_one/>
+        <About/>
       </main>
+        {/* <Test/> */}
 
+      <footer className="container mx-auto ">
 
-      <footer></footer>
+      </footer>
 
     </div>
   );

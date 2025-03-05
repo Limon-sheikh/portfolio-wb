@@ -2,8 +2,8 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 
 const Button = ({title, bgColor, border, icon}) => {
+    
     const [position, setPosition] = useState({ x: 0, y: 0 });
-    // const [bgColor, setBgColor] = useState("bg-orange-500");
 
     // mouse move and leave start
     const handleMouseMove = (e) => {
@@ -39,8 +39,7 @@ const Button = ({title, bgColor, border, icon}) => {
     return (
         <button onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}
             className={`text-gray-800 px-6 py-4 rounded-xl capitalize font-bold text-lg transition-all duration-150 ease-linear
-                flex
-                ${bgColor} ${border ? 'border border-gray-800' : ''} `}
+                flex ${bgColor} ${border ? 'border border-gray-800' : ''} `}
             style={{transform: `translate(${position.x}px, ${position.y}px)`}}> 
             {title} 
             {icon && <span className="ml-1 font-bold text-[25px]">{icon}</span>}
