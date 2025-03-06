@@ -8,7 +8,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 30) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
@@ -22,15 +22,16 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav
-      className={`p-4 transition-all duration-300 ${
-        isSticky ? "fixed top-0 left-0 w-full bg-white shadow-lg z-50" : "relative"}`} >
+    <div className="h-[87px]">
+      <nav className={`p-3  ${
+        isSticky ? "fixed top-0 w-full bg-white shadow-lg z-50" : "relative"}`} >
         <div className="container mx-auto flex items-center justify-between">
           <Logo />
           <List />
           <Button title="Contact Us" border={true} />
         </div>
-    </nav>
+      </nav>
+    </div>
   );
 };
 
