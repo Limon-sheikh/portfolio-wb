@@ -3,7 +3,7 @@ import HeroImg from "../assets/img/heroimg.png";
 import Button from "./Button";
 import { MdOutlineFileDownload } from "react-icons/md";
 
-const HeroSectionOne = () => {
+const HeroSection = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   // Mouse Move Event Handle kora
@@ -20,7 +20,7 @@ const HeroSectionOne = () => {
   };
 
   return (
-    <div className="flex justify-between h-[616px] mt-16 items-center ">
+    <section className="flex justify-between h-[616px] mt-16 items-center ">
       <div className="w-[55%]">
         <h1 className="text-gray-900 text-8xl font-bold mt-32 leading-[1.1] uppercase">Hello I’m <br /> Limon Sheikh</h1>
         <p className="text-[16px] mt-8">A personal portfolio is a collection of your work, achievements, and skills that highlights your abilities and professional growth. It serves as...</p>
@@ -40,8 +40,8 @@ const HeroSectionOne = () => {
           className="h-[561px] object-cover transition-transform duration-500 ease-out"
         />
       </div>
-    </div>
+    </section>
   );
 };
 
-export default HeroSectionOne;
+export default HeroSection;

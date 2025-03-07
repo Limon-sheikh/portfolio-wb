@@ -18,8 +18,5 @@
     font-family: var(--heading-font);
     font-weight: 600;
   }
-  h2 {
-    font-size: 3.75rem /* 60px */;
-    line-height: 1;
-  }
+  
   

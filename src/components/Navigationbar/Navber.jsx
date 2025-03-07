@@ -23,8 +23,7 @@ const Navbar = () => {
 
   return (
     <div className="h-[87px]">
-      <nav className={`p-3  ${
-        isSticky ? "fixed top-0 w-full bg-white shadow-lg z-50" : "relative"}`} >
+      <nav className={`p-3 ${isSticky ? "fixed w-full bg-white shadow-lg z-50 " : "fixd"}`} >
         <div className="container mx-auto flex items-center justify-between">
           <Logo />
           <List />

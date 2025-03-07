@@ -2,14 +2,18 @@ import Button from "../components/Button";
 import HeroImagOne from "../assets/img/One.jpeg";
 import HeroImagTow from "../assets/img/Tow.jpg";
 import { IoCheckmarkOutline } from "react-icons/io5";
+import { TbArrowWaveRightDown } from "react-icons/tb";
 
 
 const About = () => {
+
     return (
-        <div className="bg-[#f3f4f7] flex justify-between rounded-3xl pt-28 pl-6 pr-6 pb-10 ">
+        <section className="bg-[#f3f4f7] flex justify-between rounded-tl-3xl rounded-tr-3xl pt-28 pl-6 pr-6 pb-40 ">
             <div className="w-[50%] text-gray-800">
-                <h3 className="uppercase font-bold ">about me</h3>
-                <h1 className="capitalize text-6xl font-bold mt-6 leading-[1.1]">story captivating visuals portfolio</h1>
+                <div className="flex items-center gap-2">
+                    <h3 className="uppercase text-xl font-bold inline-block ">about me</h3><TbArrowWaveRightDown className=" text-4xl"/>
+                </div>
+                <h2 className="text-6xl font-bold mt-6 leading-[1.1]">Story captivating visuals portfolio</h2>
                 <p className="mt-6 text-justify">A personal portfolio is a collection of your work, achievements, and skills that highlights your abilities and professional growth. It serves as a showcase to a present your talents and attract potential employers or clients</p>
                 <div className="mt-7 mb-7 grid grid-flow-col grid-rows-3 gap-3 capitalize">
                     <div className="flex items-center gap-2 ">
@@ -47,7 +51,8 @@ const About = () => {
                     <img src={HeroImagTow} alt="" className="w-60 h-96 rounded-2xl" />
                 </div>
             </div>
-        </div>
+
+        </section>
     );
 };
 

@@ -1,6 +1,6 @@
 
 import Navber from "./components/Navigationbar/Navber";
-import Hero_section_one from "./components/Hero_section_one";
+import HeroSection from "./components/HeroSection";
 import About from "./Pages/About";
 import CustomCursor from "./components/CustomCursor";
 
@@ -8,19 +8,20 @@ import CustomCursor from "./components/CustomCursor";
 
 
 import './App.css'
+import Services from "./Pages/Services";
 
 const App = () => {
   return (
     <div>
-      <CustomCursor />
+      <CustomCursor/>
       <header>
-          <Navber/>
+          <Navber></Navber>
       </header>
 
-
-      <main className="container mx-auto ">
-        <Hero_section_one/>
-        <About/>
+      <main className="container mx-auto">
+        <HeroSection></HeroSection>
+        <About></About>
+        <Services></Services>
       </main>
         {/* <Test/> */}
 
