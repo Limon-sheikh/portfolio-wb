@@ -9,19 +9,21 @@ import CustomCursor from "./components/CustomCursor";
 
 import './App.css'
 import Services from "./Pages/Services";
+// import Counter from "./components/CustomHooks/Counter";
 
 const App = () => {
   return (
     <div>
       <CustomCursor/>
       <header>
-          <Navber></Navber>
+          <Navber/>
       </header>
 
       <main className="container mx-auto">
-        <HeroSection></HeroSection>
-        <About></About>
-        <Services></Services>
+        <HeroSection/>
+        <About/>
+        <Services/>
+        {/* <Counter/> */}
       </main>
         {/* <Test/> */}
 

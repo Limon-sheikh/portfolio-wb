@@ -36,7 +36,7 @@ const About = () => {
                         <h3>dare different</h3>
                     </div>
                 </div>
-                <Button title="read more" border={true} bgColor="bg-blue-500"/>
+                <Button title="read more" bgColor="bg-green-500"/>
             </div>
 
             <div className="bg-[#f3f4f7] flex justify-evenly w-[50%] relative">

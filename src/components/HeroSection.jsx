@@ -22,8 +22,8 @@ const HeroSection = () => {
   return (
     <section className="flex justify-between h-[616px] mt-16 items-center ">
       <div className="w-[55%]">
-        <h1 className="text-gray-900 text-8xl font-bold mt-32 leading-[1.1] uppercase">Hello I’m <br /> Limon Sheikh</h1>
-        <p className="text-[16px] mt-8">A personal portfolio is a collection of your work, achievements, and skills that highlights your abilities and professional growth. It serves as...</p>
+        <h1 className="text-gray-900 text-8xl font-bold mt-28 leading-[1.1] uppercase">Hello I’m <br /> Limon Sheikh</h1>
+        <h2 className="text-[20px] mt-8">A Passionate Front-end Developer</h2>
 
         {/* Buttons */}
         <div className="flex gap-4 mt-12">
