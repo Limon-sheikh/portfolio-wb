@@ -23,7 +23,7 @@ const HeroSection = () => {
     <section className="flex justify-between h-[616px] mt-16 items-center ">
       <div className="w-[55%]">
         <h1 className="text-gray-900 text-8xl font-bold mt-28 leading-[1.1] uppercase">Hello I’m <br /> Limon Sheikh</h1>
-        <h2 className="text-[20px] mt-8">A Passionate Front-end Developer</h2>
+        <h2 className="text-[20px] mt-8">A Passionate Frontend Developer</h2>
 
         {/* Buttons */}
         <div className="flex gap-4 mt-12">

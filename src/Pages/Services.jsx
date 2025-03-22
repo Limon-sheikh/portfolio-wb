@@ -25,10 +25,6 @@ const Services = () => {
                         title="UI/UX design" 
                         details="I design intuitive and visually appealing user interfaces using Figma and Adobe XD. My focus is on user experience, functionality, and aesthetic appeal."
                         icon={<FaFigma/>}
-                    /><Card 
-                        title="UI/UX design" 
-                        details="I design intuitive and visually appealing user interfaces using Figma and Adobe XD. My focus is on user experience, functionality, and aesthetic appeal."
-                        icon={<FaFigma/>}
                     />
                 </div>
             </div>

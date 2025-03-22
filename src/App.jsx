@@ -3,13 +3,11 @@ import Navber from "./components/Navigationbar/Navber";
 import HeroSection from "./components/HeroSection";
 import About from "./Pages/About";
 import CustomCursor from "./components/CustomCursor";
+import Services from "./Pages/Services";
 
-// import Test from "./components/Test"
-
+import Test from "./components/Test"
 
 import './App.css'
-import Services from "./Pages/Services";
-// import Counter from "./components/CustomHooks/Counter";
 
 const App = () => {
   return (
@@ -23,9 +21,8 @@ const App = () => {
         <HeroSection/>
         <About/>
         <Services/>
-        {/* <Counter/> */}
       </main>
-        {/* <Test/> */}
+        <Test/>
 
       <footer className="container mx-auto ">
 
